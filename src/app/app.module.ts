@@ -9,9 +9,10 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 
-import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
+import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatCardModule,
     MatListModule,
     MatIconModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
