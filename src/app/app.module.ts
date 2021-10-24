@@ -13,6 +13,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
+import {MatTabsModule} from '@angular/material/tabs'
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import {MatInputModule} from '@angular/material/input';
     MatListModule,
     MatIconModule,
     MatInputModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
