@@ -9,6 +9,8 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 
+import {MatTabsModule} from '@angular/material/tabs'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,8 @@ import { NavigationComponent } from './components/navigation/navigation.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
