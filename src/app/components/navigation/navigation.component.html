@@ -1,1 +1,27 @@
-<p>navigation works!</p>
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>{{title}}</span>
+    <mat-icon (click)='isToggle = !isToggle'>menu</mat-icon>
+</mat-toolbar-row>
+</mat-toolbar>
+<mat-list *ngIf='isToggle'>
+    <mat-list-item>
+        <mat-icon>home</mat-icon>
+        <a routerLink=''>HOME</a>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+    <mat-list-item>
+        <mat-icon>collections</mat-icon>
+        <a routerLink='/gallery'>GALLERY</a>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+    <mat-list-item>
+        <mat-icon>person</mat-icon>
+        <a routerLink='/contact'>Contacts</a>
+    </mat-list-item>
+
+    <mat-divider></mat-divider>
+    <p>&copy; {{date}} Lebs | All Rights Reserve</p>
+</mat-list>

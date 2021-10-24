@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
-
+  isToggle:boolean=false;
+  @Input() date:number = new Date().getFullYear();
+  @Input() title:string ='';
   constructor() { }
 
   ngOnInit(): void {
